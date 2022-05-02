@@ -23,4 +23,4 @@
 * ...
 
 ### Getting started
-Please check out our [Wiki] (https://github.com/kfmResearch-NumericsTeam/StrucEng_Library/wiki). 
+Please check out our [Wiki](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library/wiki). 
