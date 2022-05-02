@@ -14,9 +14,8 @@ from compas_fea.structure import RollerDisplacementXY
 from compas_fea.structure import ShellSection
 from compas_fea.structure import Structure
 
-import sandwichmodel_main as SMM
 
-import rhinoscriptsyntax as rs
+import sandwichmodel_main as SMM
 
 # Author(s): Andrew Liew (github.com/andrewliew), Benjamin Berger (github.com/Beberger)
 
@@ -33,16 +32,10 @@ mdl = Structure(name=name, path=path)
 # Elements
 
 rhino.add_nodes_elements_from_layers(mdl, mesh_type='ShellElement', layers=['elset_deck','elset_wall_left','elset_wall_right'])
-mdl.elements[150].axes.update({'ex': [0, 0, 1], 'ey': [0, -1, 0], 'ez': [1, 0, 0]})
+mdl.elements[100].axes.update({'ex': [0, 0, 1], 'ey': [0, -1, 0], 'ez': [1, 0, 0]})
 
-mdl.elements[1].axes.update({'ex': [1, 0, 0], 'ey': [0, -1, 0], 'ez': [0, 0, -1]})
-mdl.elements[200].axes.update({'ex': [0, 0, -1], 'ey': [0, -1, 0], 'ez': [-1, 0, 0]})
-
-# Show elements
-for element_num, element in mdl.elements.items():
-    xyz = (mdl.nodes[element.nodes[0]].x, mdl.nodes[element.nodes[0]].y, mdl.nodes[element.nodes[0]].z)
-    rs.AddTextDot(str(element_num), xyz)
-    
+mdl.elements[0].axes.update({'ex': [1, 0, 0], 'ey': [0, -1, 0], 'ez': [0, 0, -1]}) # Deck
+mdl.elements[200].axes.update({'ex': [0, 0, -1], 'ey': [0, -1, 0], 'ez': [-1, 0, 0]}) # 
 # Sets
 
 rhino.add_sets_from_layers(mdl, layers=['nset_pinned'])
