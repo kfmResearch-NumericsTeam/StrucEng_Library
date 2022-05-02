@@ -2,7 +2,7 @@
 
 'StrucEng Library' is an add-on package for the open-source, python-based computational framework COMPAS FEA. The 'StrucEng Library' includes mechanical models, saftey concepts, GUI's, load generator, etc. for the strucutral analysis of reinforced concrete and masonry members.
 
-## Models for reinforced concrete
+### Models for reinforced concrete
 * Sandwichmodel: linear-elastic ideal-plastic analysis of reinforced concrete shell structures 
 * CMM-Usermat: ...in progress...
 * Cross-section analysis: ...in progress...
