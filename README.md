@@ -22,5 +22,5 @@
 * Traffic loads on bridges
 * ...
 
-### Installation and Examples
-Please check out our [Wiki] for the installation of  the `StrucEng Library`of the the following [Link](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library/blob/main/Sandwichmodel/Example/Tutorial.pdf) for the installation and the use of the StrucEng Library. A more detailed Wiki will follow soon ...
+### Getting started
+Please check out our [Wiki] (https://github.com/kfmResearch-NumericsTeam/StrucEng_Library/wiki). 
