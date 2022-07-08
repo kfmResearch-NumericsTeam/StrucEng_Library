@@ -7,6 +7,6 @@ setuptools.setup(
      author="StrucEngLib",
      description="",
      url="https://github.com/kfmResearch-NumericsTeam/StrucEng_Library",
-    packages=['Sandwichmodel'],
+    packages=["Sandwichmodel.Sandwichmodel", "Sandwichmodel.Printerfunctions"],
     package_dir={'Sandwichmodel':'Codes'}
  )
