@@ -8,5 +8,8 @@ setuptools.setup(
      description="",
      url="https://github.com/kfmResearch-NumericsTeam/StrucEng_Library",
     packages=["Sandwichmodel.Sandwichmodel", "Sandwichmodel.Printerfunctions"],
-    package_dir={'Sandwichmodel':'Codes'}
+    package_dir={
+        'Sandwichmodel': 'Codes',
+    }
  )
+
